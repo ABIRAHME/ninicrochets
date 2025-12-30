@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - NiniCrochets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'nini-peach': '#F4DCC4',
+                        'nini-brown': '#8B6F47',
+                        'nini-pink': '#E8B4B8',
+                        'nini-lavender': '#B8A8C8',
+                        'nini-sage': '#A8B89C',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-nini-peach">
+    
+       <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center">
+                        <img src="upload/logo.jpg" alt="NiniCrochets Logo" class="h-16 w-auto rounded-lg">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-nini-brown hover:text-nini-pink transition duration-300 font-medium">Home</a>
+                    <a href="products.html" class="text-nini-brown hover:text-nini-pink transition duration-300 font-medium">Products</a>
+                    <a href="about.html" class="text-nini-brown hover:text-nini-pink transition duration-300 font-medium">About</a>
+                    <a href="contact.html" class="text-nini-brown hover:text-nini-pink transition duration-300 font-medium">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-nini-brown hover:text-nini-pink focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-nini-brown hover:text-nini-pink transition duration-300 font-medium">Home</a>
+                <a href="products.html" class="block py-2 text-nini-brown hover:text-nini-pink transition duration-300 font-medium">Products</a>
+                <a href="about.html" class="block py-2 text-nini-brown hover:text-nini-pink transition duration-300 font-medium">About</a>
+                <a href="contact.html" class="block py-2 text-nini-brown hover:text-nini-pink transition duration-300 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-nini-brown mb-6">About NiniCrochets</h1>
+            <p class="text-xl text-gray-700 leading-relaxed">Where every stitch tells a story of love, creativity, and handmade perfection.</p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-nini-brown mb-6">Our Story</h2>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            NiniCrochets was born from a passion for creating beautiful, handmade crochet pieces that bring joy and warmth to people's lives. What started as a hobby has blossomed into a labor of love, where each piece is carefully crafted with attention to detail and quality.
+                        </p>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Every item you see in our collection is made by hand, one stitch at a time. We believe in the beauty of slow craftsmanship and the unique character that handmade items bring to your home and life.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            From adorable amigurumi to cozy blankets, each creation carries the warmth of our hands and the dedication of our hearts. We're not just making products; we're creating memories and heirlooms that will be cherished for years to come.
+                        </p>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-lg">
+                        <img src="upload/logo.jpg" alt="NiniCrochets" class="w-full h-auto" onerror="this.src='https://via.placeholder.com/600x400?text=NiniCrochets+Story'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-nini-brown text-center mb-12">Our Values</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Quality -->
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-nini-pink rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-nini-brown mb-4">Quality First</h3>
+                    <p class="text-gray-600">We use only premium yarns and materials to ensure every piece is durable, soft, and beautiful.</p>
+                </div>
+
+                <!-- Handmade -->
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-nini-lavender rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-nini-brown mb-4">100% Handmade</h3>
+                    <p class="text-gray-600">Every stitch is made by hand with love and care, making each piece truly unique and special.</p>
+                </div>
+
+                <!-- Customization -->
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-nini-sage rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-nini-brown mb-4">Custom Orders</h3>
+                    <p class="text-gray-600">We love bringing your visions to life with custom colors, sizes, and designs tailored to you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section class="py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-nini-brown text-center mb-12">How We Create</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-nini-brown text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+                        <h3 class="text-lg font-bold text-nini-brown mb-3">Design</h3>
+                        <p class="text-gray-600 text-sm">We carefully select patterns and designs that are both beautiful and functional.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-nini-pink text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+                        <h3 class="text-lg font-bold text-nini-brown mb-3">Materials</h3>
+                        <p class="text-gray-600 text-sm">We source premium quality yarns in beautiful colors that are soft and durable.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-nini-lavender text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+                        <h3 class="text-lg font-bold text-nini-brown mb-3">Handcraft</h3>
+                        <p class="text-gray-600 text-sm">Each piece is carefully crocheted by hand, stitch by stitch, with attention to detail.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-nini-sage text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">4</div>
+                        <h3 class="text-lg font-bold text-nini-brown mb-3">Quality Check</h3>
+                        <p class="text-gray-600 text-sm">Every item is inspected to ensure it meets our high standards before reaching you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-12 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gradient-to-r from-nini-pink to-nini-lavender rounded-2xl shadow-xl p-8 md:p-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Why Choose NiniCrochets?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-white mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <p class="text-white">Each piece is unique and one-of-a-kind</p>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-white mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <p class="text-white">Made with premium quality materials</p>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-white mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <p class="text-white">Perfect for gifts or personal enjoyment</p>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-white mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <p class="text-white">Custom orders available</p>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-white mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <p class="text-white">Safe and child-friendly materials</p>
+                    </div>
+                    <div class="flex items-start">
+                        <svg class="w-6 h-6 text-white mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <p class="text-white">Made with love and care</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-12 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-nini-brown mb-6">Ready to Find Your Perfect Piece?</h2>
+            <p class="text-xl text-gray-700 mb-8">Explore our collection of handmade crochet creations and find something special.</p>
+            <a href="products.html" class="inline-block bg-nini-brown hover:bg-nini-pink text-white font-bold py-4 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg">
+                Shop Now
+            </a>
+        </div>
+    </section>
+
+      <!-- Footer -->
+    <footer class="bg-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-bold text-nini-brown mb-4">About NiniCrochets</h3>
+                    <p class="text-gray-600">Handcrafted crochet items made with love and care. Each piece is unique and created with premium quality yarn.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold text-nini-brown mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-600 hover:text-nini-pink transition duration-300">Home</a></li>
+                        <li><a href="products.html" class="text-gray-600 hover:text-nini-pink transition duration-300">Products</a></li>
+                        <li><a href="about.html" class="text-gray-600 hover:text-nini-pink transition duration-300">About</a></li>
+                        <li><a href="contact.html" class="text-gray-600 hover:text-nini-pink transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-xl font-bold text-nini-brown mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            ninicrochets21@gmail.com
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            WhatsApp: +1234567890
+                        </li>
+                        <li class="flex items-center text-gray-600"> 
+                            <a href="https://www.facebook.com/profile.php?id=61578409181447">
+                             
+                           Facebook: NiniCrochets 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 mt-8 pt-8 text-center">
+                <p class="text-gray-600">&copy; 2026 NiniCrochets. All rights reserved. Made with ❤️ and yarn.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
